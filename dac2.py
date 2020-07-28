@@ -20,7 +20,7 @@ def LGIN():
     print(" ")
 
     psswd = raw_input("Enter ROOT Password :")
-    if psswd == "SYS1":
+    if psswd == "####":
        pass
     else :
        subprocess.call(["clear"])
