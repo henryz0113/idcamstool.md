@@ -2,6 +2,7 @@ import os
 import subprocess
 import time
 import shutil
+import getpass
 ####OpenFrame DIR
 OF="/opt2/tmaxapp/OpenFrame/util/IDCAMS"
 CPBK="/opt2/tmaxapp/OpenFrame/tsam/copybook/"
@@ -21,7 +22,7 @@ def LGIN():
     print("==================================================")
     print(" ")
 
-    psswd = raw_input("Enter ROOT Password :")
+    psswd = getpass.getpass("Enter ROOT Password :")
     if psswd == "####":
        pass
     else :
